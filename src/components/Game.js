@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 // Redux
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { loadDetail } from '../actions/detailAction';
 
 const Game = ({ name, released, image, id }) => {
