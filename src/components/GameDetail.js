@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 // Redux
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { smallImage } from '../util';
 
 const GameDetail = () => {
     // Exit Detail
@@ -38,14 +39,14 @@ const GameDetail = () => {
                             </Info>
                         </States>
                         <Media>
-                            <img src={game.background_image} alt={game.background_image} />
+                            <img src={smallImage(game.background_image, 1280)} alt={game.background_image} />
                         </Media>
                         <Description>
                             <p>{game.description_raw}</p>
                         </Description>
                         <div className="gallery">
                             {screen.results && screen.results.map((screen) => {
-                                return <img src={screen.image} key={screen.id} alt={screen.image} />;
+                                return <img src={smallImage(screen.image, 1280)} key={screen.id} alt={screen.image} />;
                             })}            
                         </div>
                     </Detail>
