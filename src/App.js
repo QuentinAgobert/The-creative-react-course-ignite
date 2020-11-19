@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 // Components & pages
 import Home from './pages/Home';
 import Nav from './components/Nav';

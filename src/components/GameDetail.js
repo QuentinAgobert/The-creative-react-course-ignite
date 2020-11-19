@@ -1,7 +1,7 @@
 import React from 'react';
 // Styling & Animation
 import styled from 'styled-components';
-import { motion, startVisualElementAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 // Redux
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
